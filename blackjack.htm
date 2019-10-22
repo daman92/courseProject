@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to the Table</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="blackjack.css">
+  </head>
+
+  <body>
+    <div class="game">
+      <h1>Blackjack</h1>
+      <input type="button" class="btn" value="Start" onclick="start()" />
+      <input type="button" class="btn" value="Hit Me" onclick="hitme()" />
+      <input type="button" class="btn" value="Stay" onclick="stay()" />
+
+      <div id="players" class="players"></div>
+
+      <div id="deck" class="deck">
+        <div class="card" id="deckcount">52</div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+
+
+
+    <script src="blackjack.js" async defer></script>
+  </body>
+
+</html>
